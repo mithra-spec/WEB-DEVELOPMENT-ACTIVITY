@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEasy - Online Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        nav {
+            background-color: #111827;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #ea580c;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ea580c;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+        }
+
+        .card h4 {
+            color: #ea580c;
+            margin-top: 15px;
+        }
+
+        .emoji {
+            font-size: 45px;
+        }
+
+        .offer {
+            background-color: #ffedd5;
+            color: #9a3412;
+        }
+
+        .reviews {
+            background-color: #f1f5f9;
+            line-height: 2;
+        }
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2 style="color:white;">ShopEasy</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Welcome to ShopEasy</h1>
+        <h3>Big Shopping. Great Deals.</h3>
+        <p>Find your favourite products at amazing prices.</p>
+        <a href="#products" class="btn" style="background:white;color:#ea580c;">Shop Now</a>
+    </div>
+
+    <section id="categories">
+        <h2>Shop By Category</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="emoji">👕</div>
+                <h3>Fashion</h3>
+            </div>
+
+            <div class="card">
+                <div class="emoji">📱</div>
+                <h3>Electronics</h3>
+            </div>
+
+            <div class="card">
+                <div class="emoji">⌚</div>
+                <h3>Accessories</h3>
+            </div>
+
+            <div class="card">
+                <div class="emoji">👟</div>
+                <h3>Footwear</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">🎧</div>
+                <h3>Wireless Headphones</h3>
+                <p>High quality sound.</p>
+                <h4>₹1,499</h4>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+                <div class="emoji">⌚</div>
+                <h3>Smart Watch</h3>
+                <p>Smart and stylish watch.</p>
+                <h4>₹2,499</h4>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+                <div class="emoji">👟</div>
+                <h3>Sports Shoes</h3>
+                <p>Comfortable everyday shoes.</p>
+                <h4>₹1,999</h4>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🎒</div>
+                <h3>Backpack</h3>
+                <p>Perfect for college students.</p>
+                <h4>₹999</h4>
+                <a href="#contact" class="btn">Buy Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="offer">
+        <h2>Special Offer!</h2>
+        <h3>Get 30% OFF on Selected Products</h3>
+        <p>Limited time shopping offer.</p>
+    </section>
+
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <p>"Amazing products and great prices!"</p>
+        <p>"I love shopping at ShopEasy."</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: shopeasy@example.com</p>
+        <p>Phone: 9876543210</p>
+        <p>Thank you for shopping with us!</p>
+    </section>
+
+    <footer>
+        <p>© 2026 ShopEasy | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

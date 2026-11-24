@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LearnHub - Online Courses</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7ff;
+            color: #333;
+        }
+
+        nav {
+            background-color: #312e81;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #6366f1;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #312e81;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #312e81;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 230px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .emoji {
+            font-size: 40px;
+        }
+
+        .reviews {
+            background-color: #e0e7ff;
+        }
+
+        footer {
+            background-color: #312e81;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2 style="color:white;">LearnHub</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#teachers">Instructors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Learn New Skills Online</h1>
+        <p>Improve your knowledge with our online courses.</p>
+        <a href="#courses" class="btn" style="background:white;color:#312e81;">Explore Courses</a>
+    </div>
+
+    <section id="courses">
+        <h2>Popular Courses</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">💻</div>
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS and JavaScript.</p>
+                <h4>₹999</h4>
+                <a href="#contact" class="btn">Enroll Now</a>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🐍</div>
+                <h3>Python Programming</h3>
+                <p>Learn Python from basics.</p>
+                <h4>₹799</h4>
+                <a href="#contact" class="btn">Enroll Now</a>
+            </div>
+
+            <div class="card">
+                <div class="emoji">📊</div>
+                <h3>Data Science</h3>
+                <p>Learn data analysis.</p>
+                <h4>₹1499</h4>
+                <a href="#contact" class="btn">Enroll Now</a>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>Understand AI and machine learning.</p>
+                <h4>₹1999</h4>
+                <a href="#contact" class="btn">Enroll Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="teachers">
+        <h2>Our Instructors</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Rahul Kumar</h3>
+                <p>Web Development Expert</p>
+            </div>
+
+            <div class="card">
+                <h3>Priya Sharma</h3>
+                <p>Python Instructor</p>
+            </div>
+
+            <div class="card">
+                <h3>Arjun Reddy</h3>
+                <p>AI Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2>Student Reviews</h2>
+        <p>"The courses are easy to understand and useful!"</p>
+        <p>- A Happy Student</p>
+    </section>
+
+    <section id="contact">
+        <h2>Join LearnHub</h2>
+        <p>Email: learnhub@example.com</p>
+        <p>Start learning something new today!</p>
+    </section>
+
+    <footer>
+        <p>© 2026 LearnHub | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
